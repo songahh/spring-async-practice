@@ -40,7 +40,7 @@ public ResponseEntity<String> saveImgsAsync(@RequestParam(value="imgs")Multipart
    return ResponseEntity.status(HttpStatus.CREATED).build();
 }
 ```
-* GET의 Async의 경우 thenApply()를 사용해서 결과가 보이도록 작성함. Service를 처리하는 Thread와 Controller를 사용하는 Thread가 다르기 때문에 시간이 더 발생했을 것이라고 생각함
+* GET의 Async의 경우 thenApply()를 사용해서 작업이 끝날때까지 기다리도록 작성함. Service를 처리하는 Thread와 Controller를 사용하는 Thread가 다르기 때문에 Sync보다 시간이 더 발생했을 것이라고 생각함
 ``` JAVA
 @GetMapping(value = "/imgs/async", produces = "application/json")
 public CompletableFuture<ResponseEntity> findImgsAsync(){
