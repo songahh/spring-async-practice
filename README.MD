@@ -4,7 +4,7 @@
 
 
 ## 환경
-* Apple M2, 24GB, Thread 수: 8개
+* Apple M2 Pro, 24GB, Thread 수: 8개
 * JDK: 1.8
 * Spring Boot, H2 database, JPA 이용
 * ThreadPoolTasxExecutor
