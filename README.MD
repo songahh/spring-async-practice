@@ -19,17 +19,17 @@
 
 ### 결과
 #### SYNC
-<img width="1536" alt="snyc summary report" src="https://github.com/songahh/spring-async-practice/assets/77879519/82e2749a-4317-4ac4-b62d-3843e42eb7d2">
+<img width="1536" alt="snyc summary report" src="https://github.com/songahh/spring-async-practice/assets/77879519/82e2749a-4317-4ac4-b62d-3843e42eb7d2">  
 * SAVE: avg 3199 ms
 * GET : avg 3132 ms
 
 
 #### ASYNC
-<img width="1536" alt="async summary report" src="https://github.com/songahh/spring-async-practice/assets/77879519/aa9c8919-f28e-4a58-924e-acd9f00767f2">
+<img width="1536" alt="async summary report" src="https://github.com/songahh/spring-async-practice/assets/77879519/aa9c8919-f28e-4a58-924e-acd9f00767f2">  
 * SAVE: avg 993 ms
 * GET : avg 3637 ms
 
-#### 왜 이렇게 나왔다고 생각하세요?
+### 왜 이렇게 나왔다고 생각하세요?
 * SAVE의 Async의 경우 실제로 다 저장이 되지 않아도 바로 콜백함수를 리턴함
 ``` JAVA
 @PostMapping(value = "/imgs/async", consumes = {MediaType.MULTIPART_FORM_DATA_VALUE}, produces = "application/json")
