@@ -11,9 +11,9 @@
   * CorePoolSize: 2
   * MaxPoolSize: 8
 * Jmeter를 사용한 성능 테스트
-  * Thread Group
-    * Numbers of Threads (users): 50
-    * Loop cnt: 1
+** Thread Group
+*** Numbers of Threads (users): 50
+*** Loop cnt: 1
 
 ## 결과
 ### SYNC
