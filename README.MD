@@ -30,7 +30,7 @@
 
 
 ### 왜 이렇게 나왔다고 생각하세요?
-* SAVE의 Async의 경우 실제로 다 저장이 되지 않아도 바로 콜백함수를 리턴함
+* SAVE의 Async의 경우 실제로 다 저장이 되지 않아도 바로 상태코드를 리턴함
 ``` JAVA
 @PostMapping(value = "/imgs/async", consumes = {MediaType.MULTIPART_FORM_DATA_VALUE}, produces = "application/json")
 public ResponseEntity<String> saveImgsAsync(@RequestParam(value="imgs")MultipartFile files) throws Exception{
